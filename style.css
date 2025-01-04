@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Inter";
+  src: url('./assets/fonts/static/Inter-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url('./assets/fonts/static/Inter-SemiBold.ttf');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url('./assets/fonts/static/Inter-Bold.ttf');
+  font-style: normal;
+  font-weight: 700;
+}
+
+:root {
+  --color-gray-900: #141414;
+  --color-gray-800: #1F1F1F;
+  --color-gray-700: #333333;
+  --color-green: #C4F82A;
+  --color-white: #FFFFFF;
+
+  /* Original: 24px */
+  --text-preset-1: 1.5rem; 
+  
+  /* Original: 14px */
+  --text-preset-2: 0.875rem;
+
+  --spacing-50: 4px;
+  --spacing-100: 8px;
+  --spacing-150: 12px
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-500: 40px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  color: white;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  gap: var(--spacing-100);
+  background-color: var(--color-gray-900);
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.social-profile-portrait {
+  border-radius: 50%;
+  width: 88px;
+  height: 88px;
+}
+
+.social-profile-card  {
+  background-color: var(--color-gray-800);
+  padding: var(--spacing-300);
+  border-radius: 12px;
+  max-width: 28.5rem;     
+}
+
+.social-profile-title {
+
+}
+
+.social-profile-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-profile-link {
+  color: white;
+  text-decoration: none;
+  font-size: var(--text-preset-2);
+  font-weight: 700;
+}
